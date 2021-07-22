@@ -1,0 +1,14 @@
+.body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    text-align: center;
+    
+    width: 600px;
+    background-color: aquamarine;
+    border-style: solid;
+    border-width: 2px;
+    padding: 20px;
+}

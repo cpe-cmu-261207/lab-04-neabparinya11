@@ -31,8 +31,11 @@
     })
 
     function Adds(){
+        if(input.value ==""){
+            alert("Task cannot be empty")
+        }else{
         dataFile.push({name:input.value});     
-        
+        }
     }
     function AddToStorage(){
         localStorage.setItem("Todo",JSON.stringify(dataFile))
@@ -97,6 +100,7 @@
         for(i=0;i<storedValues.length;i++){
             const list = document.createElement('li')
             list.style.textDecoration = "line-through"
+            list.style.listStyle = "none"
             ul2.appendChild(list).innerHTML = storedValues[i].nameFinish;
 
         } 
